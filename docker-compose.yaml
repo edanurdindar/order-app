@@ -18,9 +18,18 @@ services:
     depends_on:
       - redis
       - mysql
+      - rabbitmq
     networks:
       - mynetwork
     command: npm run start
+
+  rabbitmq:
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - mynetwork
 
   mysql:
     image: mysql:latest
