@@ -13,3 +13,7 @@ jobs:
           docker login --username edanurakbass --password ${{ secrets.GH_PAT}} ghcr.io
           docker build . --tag ghcr.io/edanurakbass/db-app-app:latest
           docker push ghcr.io/edanurakbass/db-app-app:latest
+          docker build . --tag ghcr.io/edanurakbass/redis:latest
+          docker push ghcr.io/edanurakbass/redis:latest
+          docker build . --tag ghcr.io/edanurakbass/mysql:latest
+          docker push ghcr.io/edanurakbass/mysql:latest
