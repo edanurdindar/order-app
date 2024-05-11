@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Defter",
+        "color": "Mavi",
+        "price": 5.99
+    },
+    {
+        "name": "Kalem",
+        "color": "Siyah",
+        "price": 2.49
+    },
+    {
+        "name": "Silgi",
+        "color": "Beyaz",
+        "price": 0.99
+    },
+    {
+        "name": "Dosya",
+        "color": "Kırmızı",
+        "price": 8.99
+    },
+    {
+        "name": "Kalemtıraş",
+        "color": "Yeşil",
+        "price": 1.49
+    },
+    {
+        "name": "Defter",
+        "color": "Sarı",
+        "price": 4.99
+    },
+    {
+        "name": "Kalem",
+        "color": "Mavi",
+        "price": 2.49
+    },
+    {
+        "name": "Silgi",
+        "color": "Pembe",
+        "price": 1.29
+    },
+    {
+        "name": "Defter",
+        "color": "Kırmızı",
+        "price": 5.99
+    },
+    {
+        "name": "Kalem",
+        "color": "Kırmızı",
+        "price": 2.49
+    },
+    {
+        "name": "Cetvel",
+        "color": "Sarı",
+        "price": 3.99
+    },
+    {
+        "name": "Keçeli Kalem",
+        "color": "Mor",
+        "price": 3.79
+    },
+    {
+        "name": "Pilot Kalem",
+        "color": "Siyah",
+        "price": 4.29
+    },
+    {
+        "name": "Bant",
+        "color": "Beyaz",
+        "price": 1.99
+    },
+    {
+        "name": "Defter",
+        "color": "Yeşil",
+        "price": 5.99
+    },
+    {
+        "name": "Kalem",
+        "color": "Turuncu",
+        "price": 2.49
+    },
+    {
+        "name": "Kurşun Kalem",
+        "color": "Gri",
+        "price": 1.79
+    },
+    {
+        "name": "Kesici Makas",
+        "color": "Mavi",
+        "price": 6.49
+    },
+    {
+        "name": "Çanta",
+        "color": "Siyah",
+        "price": 15.99
+    },
+    {
+        "name": "Suluk",
+        "color": "Kırmızı",
+        "price": 3.49
+    },
+    {
+        "name": "Pilot Kalem",
+        "color": "Yeşil",
+        "price": 4.29
+    },
+    {
+        "name": "Kalem Kutusu",
+        "color": "Mor",
+        "price": 7.99
+    },
+    {
+        "name": "Defter",
+        "color": "Sarı",
+        "price": 5.99
+    },
+    {
+        "name": "Kurşun Kalem",
+        "color": "Siyah",
+        "price": 1.79
+    },
+    {
+        "name": "Raptiye",
+        "color": "Mavi",
+        "price": 2.19
+    },
+    {
+        "name": "Makas",
+        "color": "Kırmızı",
+        "price": 4.99
+    },
+    {
+        "name": "Kurşun Kalem",
+        "color": "Sarı",
+        "price": 1.79
+    },
+    {
+        "name": "Bant",
+        "color": "Siyah",
+        "price": 1.99
+    },
+    {
+        "name": "Defter",
+        "color": "Mor",
+        "price": 6.49
+    },
+    {
+        "name": "Kalem",
+        "color": "Beyaz",
+        "price": 2.49
+    },
+    {
+        "name": "Yapışkan Not Kağıdı",
+        "color": "Sarı",
+        "price": 3.29
+    },
+    {
+        "name": "Kurşun Kalem",
+        "color": "Yeşil",
+        "price": 1.79
+    },
+    {
+        "name": "Pilot Kalem",
+        "color": "Mor",
+        "price": 4.29
+    },
+    {
+        "name": "Cetvel",
+        "color": "Mavi",
+        "price": 3.99
+    }
+]

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparis Formu</title>
+    <script src="user-order.js"></script>
+</head>
+
+<body>
+    <h1>Siparis Formu</h1>
+    <form id="orderForm" action="http://localhost:3000/orders" method="POST">
+        <label for="product_id ">Urun ID:</label>
+        <input type="number" id="product_id" name="product_id" required><br><br>
+
+        <label for="amount">Adet:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+        <input type="submit" value="Siparis Ver">
+    </form>
+
+
+
+</body>
+
+</html>
