@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   redis:
     image: redis:latest
@@ -7,6 +8,7 @@ services:
       - "6380:6379"
     networks:
       - mynetwork
+
   app:
     build:
       context: .
@@ -22,6 +24,33 @@ services:
     networks:
       - mynetwork
     command: npm run start
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mynetwork
+
+  mongo-express:
+    image: mongo-express:latest
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINUSERPASSWORD=password
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+    depends_on:
+      - mongodb
+    networks:
+      - mynetwork
 
   rabbitmq:
     image: rabbitmq:latest
@@ -41,9 +70,10 @@ services:
       - "3307:3306"
     networks:
       - mynetwork
-volumes:
-  app_volume:
 
+volumes:
+  mongo-data:
+    driver: local
 
 networks:
   mynetwork:

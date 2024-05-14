@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yorum Formu</title>
+    <script src="user-review.js"></script>
+</head>
+
+<body>
+    <h1>Yorum Formu</h1>
+    <form id="registerForm" action="http://localhost:3000/add-comment" method="POST">
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product_id ">Urun ID:</label>
+        <input type="number" id="product_id" name="product_id" required><br><br>
+
+        <label for="user_comments">Kullanici Yorumu:</label>
+        <input type="text" id="user_comments" name="user_comments" required><br><br>
+
+        <label for="user_rating">Kullanici Puani:</label>
+        <input type="number" id="user_rating" name="user_rating" required><br><br>
+
+        <input type="submit" value="Yorum Yap">
+    </form>
+
+</body>
+
+</html>

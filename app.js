@@ -12,19 +12,19 @@ app.use(bodyParser.json());
 
 
 // Redis connection settings
-const redisConfig = {
+/*const redisConfig = {
     host: 'localhost',
     port: 6380
 };
 
 // Create Redis client
-const redisClient = redis.createClient(redisConfig);
+const redisClient = redis.createClient(redisConfig);*/
 
-/*
+
 const redisClient = redis.createClient({
-    url: 'redis://db-app-redis-1:6379'
+    url: 'redis://localhost:6380'
 });
-
+/*
 const redisClient = redis.createClient({
     host: 'redis',
     port: 6379,
@@ -41,7 +41,7 @@ redisClient.on('connect', function () {
 redisClient.on('error', function (err) {
     console.error('Redis error:', err);
 });
-app.get('/', async (req, res) => {
+/*app.get('/', async (req, res) => {
     try {
         const data = await redisClient.get("Edanur");
         console.log(data);
@@ -50,7 +50,12 @@ app.get('/', async (req, res) => {
         console.error(err);
         res.status(500).send('Server error');
     }
+});*/
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
 });
+
 
 //check db connection
 mysqlConnection.getConnection((err, connection) => {
@@ -133,7 +138,7 @@ app.post('/authenticate', async (req, res) => {
     const user = JSON.parse(userData);
 
     if (user.password !== inputPassword) {
-        res.send('Incorrect password.');
+        //res.send('Incorrect password.');
         return res.status(401).send({ message: 'Incorrect password.' });
     }
 
